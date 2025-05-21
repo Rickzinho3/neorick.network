@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  scroll: smooth;
+}
+
+@theme {
+  --color-rick: #ff005c;
+  --color-foreground: #09090b;
+  --font-monospace: "Space Mono", monospace;
+  --color-border: #27272a;
+  --color-hover: #27272a40;
+  --color-nav-hover: #27272a;
+  --color-destructive: #ce1515;
+  --color-text: #fefefe;
+  --color-text-gray: #272727
+}
+
+.scroll-invisivel::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-invisivel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(2em);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+}
