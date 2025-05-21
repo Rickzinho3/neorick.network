@@ -11,7 +11,7 @@ export default function Header() {
 
                 <nav className="hidden md:flex md:items-center md:gap-4">
                     <BsActivity className="text-2xl text-text"/>
-                    <p className="text-lg font-medium">Neorick V1.0</p>
+                    <p className="text-lg font-medium">Neorick V1.2</p>
                 </nav>
             <Button asChild className="border border-border rounded-md px-6 py-5 cursor-pointer hover:bg-hover transition-all">
             <a href="/docs/neorick-1.2.2.tar.gz" download className="flex items-center gap-2">
