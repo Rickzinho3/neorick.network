@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         locale: "pt_BR",
         images: [
             {
-                url: "/og-image.jpg", // Você precisará adicionar esta imagem na pasta public
+                url: "/RC.png", // Você precisará adicionar esta imagem na pasta public
                 width: 1200,
                 height: 630,
                 alt: "Preview da página",
